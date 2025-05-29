@@ -7,7 +7,7 @@ The task in week one is to learn, code up and fully understand the SEIRD model. 
 - [comomodels repository on Github](https://como-dtc-collaboration.github.io/como-models/articles/SEIRD.html)
 - Anderson, Roy M, and Robert M May. 1992. Infectious Diseases of Humans: Dynamics and Control. Oxford university press.
 
-Code and results are in [1_SEIRD](1_SEIRD) folder.
+Codes and results are in [1_SEIRD](1_SEIRD) folder.
 
 ### 1.1 Notes on SEIRD model
 SEIRD model is a deterministic compartmental model that is used to estimate the transmission dynamics of infectious diseases. The model is a system of differential equations that describe the dynamics of the population in different compartments. Based on this, many more advanced models have been created to take into account complex factors in practice, such as age and spacial variations, interventions and uncertainty. Here I mainly note down the basic SEIRD model.
@@ -36,7 +36,7 @@ They model the flow of population in and out each of the five compartments, and 
 
 The initial conditions. At the beginning of the epidemic we introduce a small number of infectious individuals, assuming everyone is susceptible: $S(0) = 1 - 1e-6$, $I(0) = 1e-6$, $E(0) = R(0) = D(0) = C(0) = 0$. Throughout the process, the sum of them is always 1.
 
-At last we can solve the model over one-year time span with steps of one day. We can then plot the cumulative results and calculate the daily incidence and daily deaths.
+Finally, we can solve the model over one-year time span with steps of one day. We can then plot the cumulative results and calculate the daily incidence and daily deaths.
 ![SEIRD](./1_SEIRD/SEIRD.png)
 ![Daily](./1_SEIRD/Daily_incidence_deaths.png)
 
