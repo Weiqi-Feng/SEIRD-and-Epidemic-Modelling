@@ -30,8 +30,8 @@ $$\frac{\text{d}S}{\text{d}t} = -\beta S I,$$
 $$\frac{\text{d}E}{\text{d}t} = \beta S I -\kappa E,$$
 $$\frac{\text{d}I}{\text{d}t} =\kappa E - (\gamma + \mu) I,$$
 $$\frac{\text{d}R}{\text{d}t} = \gamma I,$$
-$$\frac{\text{d}D}{\text{d}t} = \mu I.$$
-$$\frac{\text{d}C}{\text{d}t} = \text{newly exposed} = \beta S I,$$
+$$\frac{\text{d}D}{\text{d}t} = \mu I,$$
+$$\frac{\text{d}C}{\text{d}t} = \text{newly exposed} = \beta S I.$$
 They model the flow of population in and out each of the five compartments, and are quite intuitive.
 
 The initial conditions. At the beginning of the epidemic we introduce a small number of infectious individuals, assuming everyone is susceptible: $S(0) = 1 - 1e-6$, $I(0) = 1e-6$, $E(0) = R(0) = D(0) = C(0) = 0$. Throughout the process, the sum of them is always 1.
