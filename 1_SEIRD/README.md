@@ -8,7 +8,7 @@ The task in week one is to learn, code up and fully understand the SEIRD model. 
 SEIRD model is a deterministic compartmental model that is used to estimate the transmission dynamics of infectious diseases. The model is a system of differential equations that describe the dynamics of the population in different compartments. Based on this, many more advanced models have been created to take into account complex factors in practice, such as age and spacial variations, interventions and uncertainty. Here I mainly note down the basic SEIRD model.
 
 Our methodology mainly consists of three steps:
-1. Determine model parameters. There are two ways to do this: i) use data collected in the laboratory or field to estimate individual parameters; or ii) to fit these models to field data and, in doing so, estimate potentially a collective of parameters.
+1. Determine model parameters. There are two ways to do this: i) use data collected in the laboratory or field to estimate individual parameters; or ii) fit these models to field data and, in doing so, estimate potentially a collective of parameters.
 2. Solve the model. Use python and ode solvers to get the "state" and "change" plots of each compartment.
 3. Use the result, especially R-value, in policy making.
 
@@ -45,14 +45,14 @@ In practice, the estimation of parameters often leads to a subset of potential a
 
 `3sensitivity_I.py`: Investigate the sensitivity of the infectious compartment to all four parameters. Similar to the previous analysis, but only choose five different values for each parameter. 
 - We can see from the trend that higher $\beta$ and $\kappa$ values lead to a faster and higher peak in the number of infected individuals, because they lead to inflows of compartment $I$. 
-- On the contrary, higher $\gamma$ results in slower and less peak in $I$, because it represents the rate at which infectious individuals recover and become immune. 
+- On the contrary, higher $\gamma$ results in slower and smaller peak in $I$, because it represents the rate at which infectious individuals recover and become immune. 
 - Since the mortality rate is extremely small, multiplying it by the same factor doesn't have as significant impact as the other three parameters.
 ![I](Sensitivity_I.png)
 
 `4sensitivity_SEIRD.py`: Investigate the sensitivity of the entire SEIRD model to all four parameters. For each of the four plots, we multiplied each parameter by 1.5, except for $\mu$, which was multiplied by 7.5 for more visible result. 
 - Compared to the benchmark output, we can see that higher $\beta$ resulted in quicker and higher $E$ and $I$, and ealier steady state with higher $R$ and lower $S$ in the end. 
-- Higher $\kappa$ resulted in quicker $E$ and $I$. Although $I$ peak is slightly higher, $E$ peak is slightly smaller, as it is quickly converted to $I$. The steady state came a bit earlier with no obvious change in the final value of $R$ and $S$. 
+- Higher $\kappa$ resulted in quicker $E$ and $I$. Although $I$ peaked slightly higher, the $E$ peak was slightly smaller, as it is quickly converted to $I$. The steady state came a bit earlier with no obvious change in the final value of $R$ and $S$. 
 - Higher $\gamma$ had a significant effect as well. Both $E$ and $I$ were greatly postponed and diminished. Steady state came later with lower $R$ and higher $S$ in the end.
-- Higher $\mu$ only increased the final $D$ in place of the final $R$. Because it is very small and mainly affects the distribution between $R$ and $D$ from $I$, but not the flowing rate among $S$, $E$ and $I$.
+- Higher $\mu$ only increased the final $D$ in place of the final $R$. This is because it is very small and mainly affects the distribution between $R$ and $D$ from $I$, but not the flowing rate among $S$, $E$ and $I$.
 
 ![SEIRD](Sensitivity_SEIRD.png)
