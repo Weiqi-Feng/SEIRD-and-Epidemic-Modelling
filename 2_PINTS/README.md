@@ -38,6 +38,7 @@ MLE estimated params: [0.33810695 0.18503249 0.13988259 0.00078901]
 Pints MLE params: [0.33978187 0.18391113 0.14058606 0.00079137]
 ```
 ![3pints.png](3pints.png)
+
 In terms of MCMC sampling, PINTS provides some extremely convenient interfaces as well. Based on this, we can easily define and wrap a `problem`, set the startpoint of different chains, define a statistical problem using `pints.MCMCController`, set the number of iterations and finally run it to generate visual results. Here we can see the traces of each chain converge:
 ![4mcmc_params.png](4mcmc_params.png)
 
