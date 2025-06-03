@@ -40,8 +40,10 @@ Pints MLE params: [0.33978187 0.18391113 0.14058606 0.00079137]
 ![3pints.png](3pints.png)
 In terms of MCMC sampling, PINTS provides some extremely convenient interfaces as well. Based on this, we can easily define and wrap a `problem`, set the startpoint of different chains, define a statistical problem using `pints.MCMCController`, set the number of iterations and finally run it to generate visual results. Here we can see the traces of each chain converge:
 ![4mcmc_params.png](4mcmc_params.png)
+
 and the model fitted well:
 ![5mcmc_seird.png](5mcmc_seird.png)
+
 Please see all the codes in [1inverse.py](1inverse.py).
 
 ## 2.3 Real Data and SIR Model
