@@ -9,9 +9,12 @@ We look at the inverse problem in week two. Given noisy data, we first find the 
 Following the [PINTS tutorial](https://github.com/pints-team/pints/blob/main/examples/stats/beginners-tutorial.ipynb), we first try to understand the mathematical background of bayesian inference and sampling.
 ### 2.1.1 Bayesian Inference
 Bayesian inference is essentially maximum likelihood estimation (MLE) with prior distributions. According to the Bayes' theorem, the posterior distribution is: 
-$$P(\theta|y) = \frac{P(y|\theta) P(\theta)}{P(y)}$$ Given that the denominator $P(y)$ does not vary with parameters, maximizing $P(\theta|y)$ is equivalent to maximizing product $P(y|\theta) P(\theta)$. 
 
-Mathematically, this is the same as minimizing the square error between the observed data and the model output. As a result, we can use mean_squared_error as the loss function to optimize parameters.
+$$P(\theta|y) = \frac{P(y|\theta) P(\theta)}{P(y)}$$ 
+
+Given that the denominator $P(y)$ does not vary with parameters, maximizing $P(\theta|y)$ is equivalent to maximizing product $P(y|\theta) P(\theta)$. 
+
+Mathematically, this is the same as minimizing the square error between the observed data and the model output. As a result, we can use mean squared error as the loss function to optimize parameters.
 
 See [1inverse.py](1inverse.py) for `scipy.optimize.minimize` codes, and here's the result:
 ![2mle.png](2mle.png)
@@ -43,6 +46,7 @@ In terms of MCMC sampling, PINTS provides some extremely convenient interfaces a
 ![4mcmc_params.png](4mcmc_params.png)
 
 and the model fitted well:
+
 ![5mcmc_seird.png](5mcmc_seird.png)
 
 Please see all the codes in [1inverse.py](1inverse.py).
