@@ -50,5 +50,3 @@ Compared to the synthetic data generated from real SEIRD model and consistent Ga
 I think model simplification should take into account the attibutes of the disease itself. In this case, the epidemic was a **common-cold** outbreak, so maybe the incubation period was relatively short and the mortality rate was low. Therefore, it makes sense to omit E as it is instantly converted to I, and D as it is close to zero.
 
 Codes can be found on [Real data and SIR model](https://github.com/pints-team/pints/blob/main/examples/toy/model-sir.ipynb). This is almost identical to [1inverse.py](1inverse.py), so I didn't code it up again.
-
-### 2.4
