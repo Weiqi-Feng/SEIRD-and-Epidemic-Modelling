@@ -13,4 +13,4 @@ In the following weeks, we try to reproduce the results of [this paper](https://
 2. [Epiabm](https://github.com/SABS-R3-Epidemiology/epiabm): generate epidemic simulation data based on the population configuration file
 3. [SEIRMO](https://github.com/SABS-R3-Epidemiology/seirmo/blob/main/examples/epiabm_rt_inference/northern_ireland/northern_ireland_rt_inference.ipynb): model inference, generate SEIR estimated Rt and other relevant plots
 
-You can see full detail in [3_SEIR](3_SEIR).
+You can see full detail in [3_Geo_Hetero](3_Geo_Hetero).
