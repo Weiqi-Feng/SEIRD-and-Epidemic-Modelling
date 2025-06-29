@@ -1,5 +1,5 @@
 # Epidemic dynamics in SEIRD
-This is the weekly note for my project in Trinity Term 2025 at the University of Oxford. The topic is modelling epidemic dynamics using Agent-based model (Epiabm) and SEIRD model in aid of policy making and disease control.
+This is the weekly note for my project in Trinity Term 2025 at the University of Oxford, supervised by Professor David Gavaghan. The topic is modelling epidemic dynamics using Agent-based model (Epiabm) and SEIRD model in aid of policy making and disease control.
 
 ## Week 1: SEIRD Model
 The task in week one is to learn, code up and fully understand the SEIRD model. See [1_SEIRD](1_SEIRD).
